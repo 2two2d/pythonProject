@@ -1,4 +1,5 @@
 from .models import Book, Author, BookInstance, Genre
+from django.shortcuts import render
 
 def index(request):
     """
