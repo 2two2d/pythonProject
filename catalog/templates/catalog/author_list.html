@@ -8,14 +8,14 @@
     <ul>
 
       {% for author in author_list %}
-      <li>
-        <a href="{{ author.get_absolute_url }}">{{ author.first_name }} {{author.last_name}}</a>
-      </li>
+          <li>
+            <a href="{{ author.get_absolute_url }}">{{ author.first_name }} {{author.last_name}}</a>
+          </li>
       {% endfor %}
 
     </ul>
     {% else %}
-      <p>There are no Authors.</p>
+      <p>There are no Authors at all.</p>
     {% endif %}
 
 {% endblock %}

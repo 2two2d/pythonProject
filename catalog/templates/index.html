@@ -18,4 +18,6 @@
     <li><strong>Books containing 'Гарри' in title:</strong> {{ num_books_having_Harry }}</li>
   </ul>
 
+  <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>
+
 {% endblock %}
