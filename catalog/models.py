@@ -121,3 +121,6 @@ class Author(models.Model):
     def __str__(self):
         """String for representing the Model object."""
         return '{0}, {1}'.format(self.last_name, self.first_name)
+
+    class Meta:
+        ordering = ['first_name']
