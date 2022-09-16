@@ -4,6 +4,7 @@ from datetime import date
 from django.contrib.auth.models import User  # Required to assign User as a borrower
 from django.urls import reverse  # To generate URLS by reversing URL patterns
 
+
 # Create your models here.
 
 
