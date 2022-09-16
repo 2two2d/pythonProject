@@ -59,9 +59,13 @@ class LoanedBooksByUserListView(LoginRequiredMixin,generic.ListView):
 
 
 class BorrowedBooksLibrariansOnlyView(LoginRequiredMixin, generic.ListView):
+    permission_required = 'catalog.can_mark_returned'
 
     model = BookInstance
-    template_name = 'catalog/borrowed_book'
+    template_name = 'catalog/borrowed_books_librarians_only.html'
+
+    def get_queryset(self):
+        return BookInstance.objects.filter(status__exact='o')
 
 
 

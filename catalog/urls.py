@@ -10,6 +10,6 @@ urlpatterns = [
     url(r'^book/(?P<pk>\d+)$', views.BookDetailView.as_view(), name='book-detail'),
     url(r'^authors/$', views.AuthorListView.as_view(), name='authors'),
     url(r'^authors/(?P<pk>\d+)$', views.AuthorDetailView.as_view(), name='author-detail'),
-    url(r'^mybooks/$', views.LoanedBooksByUserListView.as_view(), name='my-borrowed'),s
-    url(r'^borrowed-books/$',views.BorrowedBooksLibrariansOnlyView.as_view(),'borrowed-books')
+    url(r'^mybooks/$', views.LoanedBooksByUserListView.as_view(), name='my-borrowed'),
+    url(r'^borrowed-books/$', views.BorrowedBooksLibrariansOnlyView.as_view(), name='borrowed-books')
 ]
